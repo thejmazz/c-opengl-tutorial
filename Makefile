@@ -1,5 +1,9 @@
+CFLAGS= -Wall -g -o
+
+all: main
+
 main: main.c
-	gcc -Wall -g -o main main.c
+	gcc ${CFLAGS} $@ $?
 
 clean:
 	rm main
