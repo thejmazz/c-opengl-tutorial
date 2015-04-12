@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <GL/glew.h>
-#include <SDL2/SDL.h>
 #include "main.h"
 #include "mesh.h"
 
@@ -43,7 +40,7 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
 
-    mesh_test();
+    draw();
 
     // Main loop
     while (*m_isClosed == FALSE) {
