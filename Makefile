@@ -1,5 +1,5 @@
 CFLAGS= -Wall -g -o
-LIBS= -lSDL2
+LIBS= -lSDL2 -lGLEW -lGLU -lGL
 
 all: main
 
