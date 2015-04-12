@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <GL/glew.h>
 #include <SDL2/SDL.h>
+#include "main.h"
+#include "mesh.h"
 
 #define TITLEBAR "OpenGL"
-#define WIDTH 800
-#define HEIGHT 300
+#define WIDTH 600
+#define HEIGHT 600
 #define TRUE 1
 #define FALSE 0
-
-void update(SDL_Window *window, int *m_isClosed);
-
 
 int main(int argc, char *argv[]) {
     // Declare the window
@@ -43,6 +42,8 @@ int main(int argc, char *argv[]) {
         perror("glew");
         exit(1);
     }
+
+    mesh_test();
 
     // Main loop
     while (*m_isClosed == FALSE) {
